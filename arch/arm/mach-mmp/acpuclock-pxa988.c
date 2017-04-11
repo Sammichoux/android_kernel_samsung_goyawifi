@@ -384,72 +384,72 @@ static unsigned int pp_discnt;
  */
 static struct pxa988_cpu_opt pxa988_op_array_z1z2[] = {
 	{
-		.pclk = 150,
-		.l2clk = 150,
-		.pdclk = 75,
-		.baclk = 75,
-		.periphclk = 18,
+		.pclk = 270,
+		.l2clk = 270,
+		.pdclk = 135,
+		.baclk = 135,
+		.periphclk = 32,
 		.ap_clk_sel = AP_CLK_SRC_PLL2,
 #ifdef DDR_COMBINDEDCLK_SOLUTION
-		.combined_dclk = 150,
-		.cp_pclk = 300,
-		.cp_busmc_clk = 150,
+		.combined_dclk = 270,
+		.cp_pclk = 540,
+		.cp_busmc_clk = 270,
 		.cp_clk_sel = AP_CLK_SRC_PLL2,
 #endif
 	},
 	{
-		.pclk = 300,
-		.l2clk = 150,
-		.pdclk = 150,
-		.baclk = 150,
-		.periphclk = 37,
+		.pclk = 540,
+		.l2clk = 270,
+		.pdclk = 270,
+		.baclk = 270,
+		.periphclk = 66,
 		.ap_clk_sel = AP_CLK_SRC_PLL2,
 #ifdef DDR_COMBINDEDCLK_SOLUTION
-		.combined_dclk = 150,
-		.cp_pclk = 300,
-		.cp_busmc_clk = 150,
+		.combined_dclk = 270,
+		.cp_pclk = 540,
+		.cp_busmc_clk = 270,
 		.cp_clk_sel = AP_CLK_SRC_PLL2,
 #endif
 	},
 	{
-		.pclk = 600,
-		.l2clk = 300,
-		.pdclk = 300,
-		.baclk = 150,
-		.periphclk = 75,
+		.pclk = 1080,
+		.l2clk = 540,
+		.pdclk = 540,
+		.baclk = 270,
+		.periphclk = 135,
 		.ap_clk_sel = AP_CLK_SRC_PLL2,
 #ifdef DDR_COMBINDEDCLK_SOLUTION
-		.combined_dclk = 300,
-		.cp_pclk = 300,
-		.cp_busmc_clk = 150,
+		.combined_dclk = 540,
+		.cp_pclk = 540,
+		.cp_busmc_clk = 270,
 		.cp_clk_sel = AP_CLK_SRC_PLL2,
 #endif
 	},
 	{
-		.pclk = 800,
-		.l2clk = 400,
-		.pdclk = 400,
-		.baclk = 200,
-		.periphclk = 100,
+		.pclk = 1440,
+		.l2clk = 720,
+		.pdclk = 720,
+		.baclk = 360,
+		.periphclk = 180,
 		.ap_clk_sel = AP_CLK_SRC_PLL2P,
 #ifdef DDR_COMBINDEDCLK_SOLUTION
-		.combined_dclk = 400,
-		.cp_pclk = 400,
-		.cp_busmc_clk = 200,
+		.combined_dclk = 720,
+		.cp_pclk = 720,
+		.cp_busmc_clk = 360,
 		.cp_clk_sel = AP_CLK_SRC_PLL2,
 #endif
 	},
 	{
-		.pclk = 1200,
-		.l2clk = 600,
-		.pdclk = 300,
-		.baclk = 300,
-		.periphclk = 150,
+		.pclk = 2160,
+		.l2clk = 1080,
+		.pdclk = 540,
+		.baclk = 540,
+		.periphclk = 270,
 		.ap_clk_sel = AP_CLK_SRC_PLL2,
 #ifdef DDR_COMBINDEDCLK_SOLUTION
-		.combined_dclk = 300,
-		.cp_pclk = 300,
-		.cp_busmc_clk = 150,
+		.combined_dclk = 540,
+		.cp_pclk = 540,
+		.cp_busmc_clk = 270,
 		.cp_clk_sel = AP_CLK_SRC_PLL2,
 #endif
 	},
@@ -458,19 +458,19 @@ static struct pxa988_cpu_opt pxa988_op_array_z1z2[] = {
 /* The PP table only list the possible op here */
 static struct pxa988_cpu_opt pxa988_op_array_z3ax[] = {
 	{
-		.pclk = 312,
-		.l2clk = 312,
-		.pdclk = 156,
-		.baclk = 156,
-		.periphclk = 39,
+		.pclk = 561,
+		.l2clk = 561,
+		.pdclk = 280,
+		.baclk = 280,
+		.periphclk = 70,
 		.ap_clk_sel = AP_CLK_SRC_PLL1_624,
 	},
 	{
-		.pclk = 624,
-		.l2clk = 312,
-		.pdclk = 312,
-		.baclk = 156,
-		.periphclk = 78,
+		.pclk = 1123,
+		.l2clk = 561,
+		.pdclk = 561,
+		.baclk = 280,
+		.periphclk = 140,
 		.ap_clk_sel = AP_CLK_SRC_PLL1_624,
 	},
 	/*
@@ -479,27 +479,27 @@ static struct pxa988_cpu_opt pxa988_op_array_z3ax[] = {
 	* pll2 rate
 	*/
 	{
-		.pclk = 800,
-		.l2clk = 400,
-		.pdclk = 400,
-		.baclk = 200,
-		.periphclk = 100,
+		.pclk = 1440,
+		.l2clk = 720,
+		.pdclk = 720,
+		.baclk = 360,
+		.periphclk = 180,
 		.ap_clk_sel = AP_CLK_SRC_PLL2,
 	},
 	{
-		.pclk = 1066,
-		.l2clk = 533,
-		.pdclk = 533,
-		.baclk = 266,
-		.periphclk = 133,
+		.pclk = 1918,
+		.l2clk = 959,
+		.pdclk = 959,
+		.baclk = 478,
+		.periphclk = 239,
 		.ap_clk_sel = AP_CLK_SRC_PLL2,
 	},
 	{
-		.pclk = 1248,
-		.l2clk = 624,
+		.pclk = 2246,
+		.l2clk = 1123,
 		.pdclk = 624,
-		.baclk = 312,
-		.periphclk = 156,
+		.baclk = 561,
+		.periphclk = 280,
 		.ap_clk_sel = AP_CLK_SRC_PLL1_1248,
 	},
 };
@@ -519,23 +519,23 @@ static struct pxa988_cpu_opt pxa988_op_array_z3ax[] = {
  */
 static struct pxa988_ddr_axi_opt lpddr400_axi_oparray_z1z2[] = {
 	{
-		.dclk = 150,
+		.dclk = 270,
 		.ddr_tbl_index = 1,
-		.aclk = 150,
+		.aclk = 270,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL2,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL2,
 	},
 	{
-		.dclk = 300,
+		.dclk = 540,
 		.ddr_tbl_index = 3,
-		.aclk = 150,
+		.aclk = 270,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL2,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL2,
 	},
 	{
-		.dclk = 400,
+		.dclk = 720,
 		.ddr_tbl_index = 5,
-		.aclk = 208,
+		.aclk = 374,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL2P,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL1_416,
 	},
@@ -543,23 +543,23 @@ static struct pxa988_ddr_axi_opt lpddr400_axi_oparray_z1z2[] = {
 
 static struct pxa988_ddr_axi_opt lpddr400_axi_oparray_z3ax[] = {
 	{
-		.dclk = 156,
+		.dclk = 280,
 		.ddr_tbl_index = 1,
-		.aclk = 78,
+		.aclk = 140,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 	},
 	{
-		.dclk = 312,
+		.dclk = 561,
 		.ddr_tbl_index = 3,
-		.aclk = 156,
+		.aclk = 280,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 	},
 	{
-		.dclk = 400,
+		.dclk = 720,
 		.ddr_tbl_index = 5,
-		.aclk = 200,
+		.aclk = 360,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL2P,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL2P,
 	},
@@ -567,23 +567,23 @@ static struct pxa988_ddr_axi_opt lpddr400_axi_oparray_z3ax[] = {
 
 static struct pxa988_ddr_axi_opt lpddr533_axi_oparray_z3ax[] = {
 	{
-		.dclk = 156,
+		.dclk = 280,
 		.ddr_tbl_index = 1,
-		.aclk = 78,
+		.aclk = 140,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 	},
 	{
-		.dclk = 312,
+		.dclk = 561,
 		.ddr_tbl_index = 3,
-		.aclk = 156,
+		.aclk = 280,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL1_624,
 	},
 	{
-		.dclk = 533,
+		.dclk = 959,
 		.ddr_tbl_index = 5,
-		.aclk = 208,
+		.aclk = 374,
 		.ddr_clk_sel = DDR_AXI_CLK_SRC_PLL2P,
 		.axi_clk_sel = DDR_AXI_CLK_SRC_PLL1_416,
 	},
@@ -607,7 +607,7 @@ static struct platform_opt platform_op_arrays[] = {
 		.cpu_name = "PXA988_Z3Ax",
 		.cpu_opt = pxa988_op_array_z3ax,
 		.cpu_opt_size = ARRAY_SIZE(pxa988_op_array_z3ax),
-		.df_max_cpurate = 1248,
+		.df_max_cpurate = 2246,
 		.ddr_axi_opt = lpddr400_axi_oparray_z3ax,
 		.ddr_axi_opt_size = ARRAY_SIZE(lpddr400_axi_oparray_z3ax),
 	},
@@ -618,7 +618,7 @@ static struct platform_opt platform_op_arrays[] = {
 		.cpu_name = "PXA988_Z3Ax",
 		.cpu_opt = pxa988_op_array_z3ax,
 		.cpu_opt_size = ARRAY_SIZE(pxa988_op_array_z3ax),
-		.df_max_cpurate = 1248,
+		.df_max_cpurate = 2246,
 		.ddr_axi_opt = lpddr533_axi_oparray_z3ax,
 		.ddr_axi_opt_size = ARRAY_SIZE(lpddr533_axi_oparray_z3ax),
 	},
@@ -751,14 +751,14 @@ int get_max_cpurate(void)
 }
 
 static struct cpu_rtcwtc cpu_rtcwtc_z3[] = {
-	{.max_pclk = 800, .l1_rtc = 0x88888888, .l2_rtc = 0x00008444,},
-	{.max_pclk = 1205, .l1_rtc = 0x99999999, .l2_rtc = 0x00009555,},
+	{.max_pclk = 1440, .l1_rtc = 0x88888888, .l2_rtc = 0x00008444,},
+	{.max_pclk = 2169, .l1_rtc = 0x99999999, .l2_rtc = 0x00009555,},
 };
 
 static struct cpu_rtcwtc cpu_rtcwtc_ax[] = {
-	{.max_pclk = 800, .l1_rtc = 0x88888888, .l2_rtc = 0x00008444,},
-	{.max_pclk = 1066, .l1_rtc = 0x99999999, .l2_rtc = 0x00009555,},
-	{.max_pclk = 1205, .l1_rtc = 0xAAAAAAAA, .l2_rtc = 0x0000A555,},
+	{.max_pclk = 1440, .l1_rtc = 0x88888888, .l2_rtc = 0x00008444,},
+	{.max_pclk = 1918, .l1_rtc = 0x99999999, .l2_rtc = 0x00009555,},
+	{.max_pclk = 2169, .l1_rtc = 0xAAAAAAAA, .l2_rtc = 0x0000A555,},
 };
 static void __init __init_cpu_rtcwtc(struct pxa988_cpu_opt *cpu_opt)
 {
@@ -2088,7 +2088,7 @@ static int pxa988_ddraxi_setrate(struct clk *clk, unsigned long rate)
 	ddr_fc_failure = 0;
 
 	if ((cpu_is_pxa988_z3() || cpu_is_pxa986_z3())
-			&& ((md_new->dclk == 156) || (md_new->dclk == 312))
+			&& ((md_new->dclk == 280) || (md_new->dclk == 561))
 			&& disp_is_on()) {
 		md_old_eof = md_old;
 		md_new_eof = md_new;
@@ -2109,7 +2109,7 @@ static int pxa988_ddraxi_setrate(struct clk *clk, unsigned long rate)
 				ret = set_ddr_axi_freq(md_old, md_new);
 				if (!ret)
 					ddr_lpm_tbl_optimize(md_old->dclk,
-						md_new->dclk, 400);
+						md_new->dclk, 720);
 				spin_unlock(&fc_seq_lock);
 				if (ret)
 					ddr_fc_failure = 1;
@@ -2134,7 +2134,7 @@ static int pxa988_ddraxi_setrate(struct clk *clk, unsigned long rate)
 		ret = set_ddr_axi_freq(md_old, md_new);
 		if (!ret)
 			ddr_lpm_tbl_optimize(md_old->dclk,
-				md_new->dclk, 400);
+				md_new->dclk, 720);
 
 		spin_unlock(&fc_seq_lock);
 	}
@@ -2146,7 +2146,7 @@ static int pxa988_ddraxi_setrate(struct clk *clk, unsigned long rate)
 	ret = set_ddr_axi_freq(md_old, md_new);
 	if (!ret)
 		ddr_lpm_tbl_optimize(md_old->dclk,
-			md_new->dclk, 400);
+			md_new->dclk, 720);
 
 	spin_unlock(&fc_seq_lock);
 	if (ret)
@@ -2210,9 +2210,9 @@ static int panic_scale_coreddraxi_freq2min(struct notifier_block *this,
 
 	/* core scaling to 312, ddr scaling to 156 */
 	cpucop = cur_cpu_op;
-	cputop = cpu_rate2_op_ptr(312, &index);
+	cputop = cpu_rate2_op_ptr(561, &index);
 	ddraxicop = cur_ddraxi_op;
-	ddraxitop = &ddraxiop_array[ddr_rate2_op_index(156)];
+	ddraxitop = &ddraxiop_array[ddr_rate2_op_index(280)];
 	spin_lock_irqsave(&fc_seq_lock, flag);
 	atomic_set(&panic_disable_fc, 1);
 	if (cpucop != cputop)
