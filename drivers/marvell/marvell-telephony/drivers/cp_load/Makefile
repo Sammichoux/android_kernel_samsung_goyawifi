@@ -5,8 +5,8 @@
 BUILDROOT = $(srctree)/drivers/marvell/marvell-telephony/drivers
 TARGET = cploaddev
 
-#$(TARGET)-objs := pxa_cp_load.o ../errorhandler/src/watchdog.o
-$(TARGET)-objs := pxa_cp_load.o watchdog.o
+$(TARGET)-objs := pxa_cp_load.o ../errorhandler/src/watchdog.o
+#$(TARGET)-objs := pxa_cp_load.o watchdog.o
 
 ifeq ($(CONFIG_CPU_PXA988),y)
 $(TARGET)-objs += pxa988_cp.o
